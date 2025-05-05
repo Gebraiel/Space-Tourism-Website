@@ -1,0 +1,18 @@
+import React from "react";
+import "./index.css"
+import Crews from "../components/Crews";
+export default async function Crew() {
+  const res = await fetch('http://localhost:8080/crew');
+  const crews = await res.json();
+  console.log(crews);
+  return (
+    <div className="flex flex-col gap-6 h-full m-auto px-6">
+      <div className="flex justify-between">
+        <h1 className="w-full md:text-5 text-6 text-center md:text-left font-barlow text-white uppercase">
+          <span className="text-white/25 mr-6">02</span> Meet your Crew
+        </h1>
+      </div>
+      <Crews crews={crews}/>
+    </div>
+  );
+}
