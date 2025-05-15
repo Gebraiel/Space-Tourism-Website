@@ -9,11 +9,9 @@ import { usePathname } from 'next/navigation';
 export default function NavigationMenu() {
     const [isOpened,setIsOpened] = useState(false); 
     const path = usePathname();
-    console.log(path == '/destination')
-    console.log(path);
     return (
         <>
-            <button className='block md:hidden z-10' onClick={()=>setIsOpened(!isOpened)}>
+            <button className='block md:hidden z-50' onClick={()=>setIsOpened(!isOpened)}>
                 {
                     isOpened?<Image src={CloseButton} width="24" height="21" alt="close button" />:<Image src={BurgerButton} width="24" height="21" alt="burger-menu" />
                 }

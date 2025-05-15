@@ -4,8 +4,8 @@ import {motion} from "motion/react";
 export default function Crews({crews}) {
     const [crewIndex, setCrewIndex] = useState(0);
     
-  return (
-    <div className="grow flex lg:flex-row flex-col gap-8 justify-between lg:items-end md:items-center lg:pb-12">
+    return (
+    <div className=" flex lg:flex-row flex-col gap-8 justify-between md:items-center lg:pb-12">
         <div className="flex flex-col justify-end lg:items-start items-center lg:gap-42 gap-6 lg:mt-0 md:mt-10">
             <motion.article  initial={{opacity:0,x:"-20px"}} animate={{opacity:1,x:0}} key={crews[crewIndex].description} className="flex flex-col lg:gap-0 gap-6 w-full lg:text-left text-center">
                 

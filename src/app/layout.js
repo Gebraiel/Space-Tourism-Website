@@ -2,6 +2,7 @@ import { Bellefair, Barlow_Condensed } from "next/font/google";
 
 import "./globals.css";
 import Header from "./components/Header";
+import BackgroundImage from "./components/BackgroundImage";
 
 const bellefair = Bellefair({
   variable:"--font-bellefair",
@@ -22,11 +23,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className="bg-cover bg-no-repeat bg-center min-h-screen grid grid-rows-[auto_1fr]"
+        className="bg-cover bg-no-repeat bg-center min-h-screen grid grid-rows-[auto_1fr] relative"
       >
         <Header/>
-        <main className="container lg:max-w-[1110px] md:max-w-[688px] h-full m-auto ">
-          {children}
+        <main>
+          <div className="relative z-1">
+            {children}
+          </div>
+          <BackgroundImage/>
         </main>
       </body>
     </html>
