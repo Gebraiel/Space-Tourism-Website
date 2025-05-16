@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         className="bg-cover bg-no-repeat bg-center min-h-screen grid grid-rows-[auto_1fr] relative"
       >
         <Header/>
-        <main>
+        <main className="flex justify-center items-center">
           <div className="relative z-1">
             {children}
           </div>
