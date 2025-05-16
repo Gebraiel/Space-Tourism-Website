@@ -29,10 +29,10 @@ export default function NavigationMenu() {
                     isOpened &&
                     <motion.nav initial={{x:"100%"}} transition={{type:"tween"}} animate={{x:0}} exit={{x:"100%"}} className='backdrop-blur-2xl pl-8 pt-32 bg-white/10 block md:hidden absolute right-0 top-0 h-screen w-2/3'>
                         <ol className='flex flex-col items-start gap-8 text-8 font-barlow text-white uppercase '>
-                            <li className={`items-center flex h-5 w-full mobile-menu-item ${path == '/' ? 'active' : ''}`}><Link  href="/" ><span className='mr-3 font-bold'>00</span>Home</Link></li>
-                            <li className={`items-center flex h-5 w-full mobile-menu-item ${path == '/destination' ? 'active' : ''}`}><Link  href="/destination"><span className='mr-3 font-bold'>01</span>Destination</Link></li>
-                            <li className={`items-center flex h-5 w-full mobile-menu-item ${path == '/crew' ? 'active' : ''}`}><Link  href="/crew"><span className='mr-3 font-bold'>02</span>Crew</Link></li>
-                            <li className={`items-center flex h-5 w-full mobile-menu-item ${path == '/technology' ? 'active' : ''}`}><Link  href="/technology"><span className='mr-3 font-bold'>03</span>Technology</Link></li>
+                            <li className={`items-center flex h-5 w-full mobile-menu-item ${path == '/' ? 'active' : ''}`}><Link  href="/" onClick={()=>setIsOpened(false)}><span className='mr-3 font-bold'>00</span>Home</Link></li>
+                            <li className={`items-center flex h-5 w-full mobile-menu-item ${path == '/destination' ? 'active' : ''}`}><Link  href="/destination" onClick={()=>setIsOpened(false)}><span className='mr-3 font-bold'>01</span>Destination</Link></li>
+                            <li className={`items-center flex h-5 w-full mobile-menu-item ${path == '/crew' ? 'active' : ''}`}><Link  href="/crew" onClick={()=>setIsOpened(false)}><span className='mr-3 font-bold'>02</span>Crew</Link></li>
+                            <li className={`items-center flex h-5 w-full mobile-menu-item ${path == '/technology' ? 'active' : ''}`}><Link  href="/technology" onClick={()=>setIsOpened(false)}><span className='mr-3 font-bold'>03</span>Technology</Link></li>
                         </ol>
                     </motion.nav>
                 }
