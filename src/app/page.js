@@ -1,5 +1,12 @@
 
 import Link from "next/link";
+export const metadata = {
+  title: "Space Tourism",
+  description: "Embark on a journey beyond Earth. Space Tourism offers once-in-a-lifetime experiences to explore the galaxy’s most iconic destinations.",
+  icons:{
+    icon:'/logo.svg'
+  }
+};
 export default function Home() {
   return (
         <div className="container lg:max-w-[1110px] md:max-w-[688px] z-1 relative px-6 py-32 h-full m-auto flex gap-20 lg:flex-row flex-col lg:justify-between justify-center  text-center lg:text-left lg:items-end md:items-center flex-wrap">
