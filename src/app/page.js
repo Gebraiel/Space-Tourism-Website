@@ -9,7 +9,7 @@ export const metadata = {
 };
 export default function Home() {
   return (
-        <div className="container lg:max-w-[1110px] md:max-w-[688px] z-1 relative px-6 py-32 h-full m-auto flex gap-20 lg:flex-row flex-col lg:justify-between justify-center  text-center lg:text-left lg:items-end md:items-center flex-wrap">
+        <div className="container lg:max-w-[1110px] md:max-w-[688px] z-1 relative px-6 py-32 h-full m-auto flex gap-20 lg:flex-row flex-col lg:justify-between justify-center  text-center lg:text-left lg:items-end items-center flex-wrap">
           <div className="text-blue-300 lg:w-[40%] md:w-[72%] animate-opacity">
             <p className="md:text-5 text-6 font-barlow">SO, YOU WANT TO TRAVEL TO</p>
             <h1 className="text-1 text-white font-bellefair">SPACE</h1>
