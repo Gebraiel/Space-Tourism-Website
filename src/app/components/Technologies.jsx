@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 import {motion} from "motion/react";
-
 export default function Technologies({techs}) {
   const [techIndex, setTechIndex] = useState(0);
     return (

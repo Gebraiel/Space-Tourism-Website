@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import React, { useState } from 'react'
+import React from 'react'
 import homeBgD from "@/public/background-home-desktop.jpg";
 import homeBgT from "@/public/background-home-tablet.jpg";
 import homeBgM from "@/public/background-home-mobile.jpg";

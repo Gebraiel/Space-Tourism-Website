@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css"
 import Crews from "../components/Crews";
 import getCrews from "../services/getCrews";
 export const metadata = {

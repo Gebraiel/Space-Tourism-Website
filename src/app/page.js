@@ -1,9 +1,5 @@
 
 import Link from "next/link";
-import "./index.css";
-import bg from "@/public/background-home-desktop.jpg";
-import Image from "next/image";
-import BackgroundImage from "./components/BackgroundImage";
 export default function Home() {
   return (
         <div className="container lg:max-w-[1110px] md:max-w-[688px] z-1 relative px-6 py-32 h-full m-auto flex gap-20 lg:flex-row flex-col lg:justify-between justify-center  text-center lg:text-left lg:items-end md:items-center flex-wrap">
